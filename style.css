@@ -5,7 +5,7 @@
 *{
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 /* 
 :root{
@@ -419,6 +419,18 @@ body {
     padding: 0.5rem;
   }
   
+  .contact-info-container a {
+    text-decoration: none;
+    color: #0077b5; /* LinkedIn blue */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .contact-info-container a:hover {
+    color: #005582; /* Darker blue on hover */
+  }
+  
+
   .contact-info-container {
     display: flex;
     align-items: center;
@@ -440,12 +452,46 @@ body {
   }
   
   /* FOOTER SECTION */
-  
   footer {
-    height: 26vh;
-    margin: 0 1rem;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 16px; /* Increased base font size */
+  }
+  
+  .footer-nav-links-container {
+    margin-bottom: 12px;
+  }
+  
+  .footer-nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  .footer-nav-links li {
+    display: inline;
+  }
+  
+  .footer-nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px; /* Increased link font size */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .footer-nav-links a:hover {
+    color: #00c3ff;
   }
   
   footer p {
-    text-align: center;
+    margin-top: 12px;
+    font-size: 14px; /* Increased copyright text size */
+    opacity: 0.9;
   }
+  
+  
